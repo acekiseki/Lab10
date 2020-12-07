@@ -11,7 +11,7 @@ if ($sqlKey -> connect_errno)
     exit();
 }
 
-$temp = "INSERT INTO User (userId) VALUES ('$uName')";
+$temp = "INSERT INTO User (user_id) VALUES ('$uName')";
 
 if ($record = $mysqli-> query($temp))
 {
